@@ -94,7 +94,7 @@ hr {
 }
 
 blockquote {
-    border-left: 5px solid #42b983;
+    border-left: 5px solid #7b7096;
     padding: 1rem 0.8rem 0.2rem 0.8rem;
     color: #666;
     background-color: rgba(66, 185, 131, .1);
@@ -387,9 +387,9 @@ header .side-nav .social-link {
 }
 
 .cover-btns a:hover {
-    border: 1px solid #b6e2bc;
-    background-color: #bee9cb;
-    box-shadow: 0 14px 26px -12px #bdeccf,
+    border: 1px solid #8f6e94;
+    background-color: #8f6e94;
+    box-shadow: 0 14px 26px -12px #8f6e94,
     0 4px 23px 0 rgba(0, 0, 0, 0.12),
     0 8px 10px -5px rgba(233, 30, 99, 0.2);
 }
@@ -984,7 +984,7 @@ article .article-tags .chip {
 
 .paging .page-info {
     font-size: 1.4rem;
-    color: #888;
+    color: #000000;
     padding-top: 1rem;
 }
 
@@ -997,7 +997,7 @@ article .article-tags .chip {
 }
 
 .paging .disabled i {
-    color: #999 !important;
+    color: #000000 !important;
 }
 
 /*文章详情样式*/
@@ -1873,7 +1873,7 @@ footer .copy-right {
 
 .search-result-list .search-result-title {
     font-size: 1.4rem;
-    color: #42b983;
+    color: #334172;
 }
 
 .search-result-list li {
