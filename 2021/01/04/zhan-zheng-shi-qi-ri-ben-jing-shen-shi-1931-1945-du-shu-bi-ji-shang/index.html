@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="SepluvN" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="SepluvN" type="application/atom+xml">
 </head>
 
 
@@ -58,7 +58,7 @@
     
     <a href="/" class="waves-effect waves-light">
       
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      <i class="far fa-meh-blank" style="zoom: 0.6;"></i>
       
       <span>首页</span>
     </a>
@@ -69,7 +69,7 @@
     
     <a href="/tags" class="waves-effect waves-light">
       
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      <i class="fas fa-cannabis" style="zoom: 0.6;"></i>
       
       <span>标签</span>
     </a>
@@ -80,7 +80,7 @@
     
     <a href="/categories" class="waves-effect waves-light">
       
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      <i class="fas fa-skull" style="zoom: 0.6;"></i>
       
       <span>分类</span>
     </a>
@@ -91,7 +91,7 @@
     
     <a href="/archives" class="waves-effect waves-light">
       
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      <i class="fas fa-star-of-david" style="zoom: 0.6;"></i>
       
       <span>归档</span>
     </a>
@@ -102,7 +102,7 @@
     
     <a href="/about" class="waves-effect waves-light">
       
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      <i class="fab fa-tripadvisor" style="zoom: 0.6;"></i>
       
       <span>关于</span>
     </a>
@@ -113,7 +113,7 @@
     
     <a href="/contact" class="waves-effect waves-light">
       
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      <i class="fab fa-microblog" style="zoom: 0.6;"></i>
       
       <span>留言板</span>
     </a>
@@ -124,7 +124,7 @@
     
     <a href="/friends" class="waves-effect waves-light">
       
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      <i class="fas fa-star-and-crescent" style="zoom: 0.6;"></i>
       
       <span>友情链接</span>
     </a>
@@ -161,7 +161,7 @@
 	  
 		<a href="/" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-home"></i>
+			    <i class="fa-fw far fa-meh-blank"></i>
 			
 			首页
 		</a>
@@ -172,7 +172,7 @@
 	  
 		<a href="/tags" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-tags"></i>
+			    <i class="fa-fw fas fa-cannabis"></i>
 			
 			标签
 		</a>
@@ -183,7 +183,7 @@
 	  
 		<a href="/categories" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-bookmark"></i>
+			    <i class="fa-fw fas fa-skull"></i>
 			
 			分类
 		</a>
@@ -194,7 +194,7 @@
 	  
 		<a href="/archives" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-archive"></i>
+			    <i class="fa-fw fas fa-star-of-david"></i>
 			
 			归档
 		</a>
@@ -205,7 +205,7 @@
 	  
 		<a href="/about" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-user-circle"></i>
+			    <i class="fa-fw fab fa-tripadvisor"></i>
 			
 			关于
 		</a>
@@ -216,7 +216,7 @@
 	  
 		<a href="/contact" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-comments"></i>
+			    <i class="fa-fw fab fa-microblog"></i>
 			
 			留言板
 		</a>
@@ -227,7 +227,7 @@
 	  
 		<a href="/friends" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-address-book"></i>
+			    <i class="fa-fw fas fa-star-and-crescent"></i>
 			
 			友情链接
 		</a>
@@ -278,10 +278,104 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -324,7 +418,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    10.1k
+                    10k
                 </div>
                 
 
@@ -352,11 +446,7 @@
 </blockquote>
 <br>
 
-<h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><h5 id="一-向1931年至1945年的日本趋近"><a href="#一-向1931年至1945年的日本趋近" class="headerlink" title="一 向1931年至1945年的日本趋近"></a>一 向1931年至1945年的日本趋近</h5><h5 id="二-关于转向"><a href="#二-关于转向" class="headerlink" title="二 关于转向"></a>二 关于转向</h5><h5 id="三-锁国"><a href="#三-锁国" class="headerlink" title="三 锁国"></a>三 锁国</h5><h5 id="四-关于国体"><a href="#四-关于国体" class="headerlink" title="四 关于国体"></a>四 关于国体</h5><h5 id="五-大亚细亚"><a href="#五-大亚细亚" class="headerlink" title="五 大亚细亚"></a>五 大亚细亚</h5><h5 id="六-非转向的形式"><a href="#六-非转向的形式" class="headerlink" title="六 非转向的形式"></a>六 非转向的形式</h5><h5 id="七-日本之中的朝鲜"><a href="#七-日本之中的朝鲜" class="headerlink" title="七 日本之中的朝鲜"></a>七 日本之中的朝鲜</h5><h5 id="笔者语"><a href="#笔者语" class="headerlink" title="笔者语"></a>笔者语</h5><br>
-
-<br>
-
-<h2 id="一-向1931年至1945年的日本趋近-1"><a href="#一-向1931年至1945年的日本趋近-1" class="headerlink" title="一 向1931年至1945年的日本趋近"></a>一 向1931年至1945年的日本趋近</h2><br>
+<h2 id="一-向1931年至1945年的日本趋近"><a href="#一-向1931年至1945年的日本趋近" class="headerlink" title="一 向1931年至1945年的日本趋近"></a>一 向1931年至1945年的日本趋近</h2><br>
 
 <p>一篇引论。</p>
 <p>五点鹤见俊辅认为不得不说的杂谈：</p>
@@ -392,7 +482,7 @@
 <p>2020.10.30</p>
  <br>
 
-<h2 id="二-关于转向-1"><a href="#二-关于转向-1" class="headerlink" title="二 关于转向"></a>二 关于转向</h2><br>
+<h2 id="二-关于转向"><a href="#二-关于转向" class="headerlink" title="二 关于转向"></a>二 关于转向</h2><br>
 
 <p>反德川幕府运动成功结束，而资历较老的能人志士多为理想捐躯，短期内人们保持一种敏锐的自觉，此后的日本领导者有着勤勉质朴的特质——他们冷静清醒地判断现状，在两国几乎明眼可见的悬殊差距下打赢了日俄战争。</p>
 <p>而这种沉着并没有保持多久，日俄战争胜利后，新政府领导者连同仅剩的少数老人沾沾自喜，自封“华族”（即贵族），靠宣扬明治维新时的丰功伟业过活。</p>
@@ -413,7 +503,7 @@
 <p>*日本以米价暴涨为导火线而发生的民众暴动。1918年始于富山县的鱼津而漫及全国，民众袭击投机米商，政府出动军队予以镇压。（书内注）</p>
 <br>
 
-<h2 id="三-锁国-1"><a href="#三-锁国-1" class="headerlink" title="三 锁国"></a>三 锁国</h2><br>
+<h2 id="三-锁国"><a href="#三-锁国" class="headerlink" title="三 锁国"></a>三 锁国</h2><br>
 
 <p>由加拿大地图切入，讨论了具有国境线与别国直接接壤的国家与四面环海的日本的区别。天然的地理环境让日本国民具有思想上天生的“锁国性”，这让他们自卑，从而具有吸收外界新知的冲动。</p>
 <p>日本文化依次受到中国、印度到近代欧洲的影响，从太夫、才藏这种表演艺术长达千年的演化得以窥见一角。开拓民俗学式的日本文学研究的折口信夫指出，日本娱乐表演的最初形态即为酒宴中招待贵宾时的余兴节目。在日本的娱乐表演中，外来者通常被描绘为能言善辩之人，而本土文化以沉默寡言为特色。在日本，逻辑为外来文化的特征，而诉诸心性气氛则是本土文化的一贯方式。</p>
@@ -434,7 +524,7 @@
 <p>（概括自百度百科-赤穗事件）</p>
 <br>
 
-<h2 id="四-关于国体-1"><a href="#四-关于国体-1" class="headerlink" title="四 关于国体"></a>四 关于国体</h2><br>
+<h2 id="四-关于国体"><a href="#四-关于国体" class="headerlink" title="四 关于国体"></a>四 关于国体</h2><br>
 
 <p>可以把国体概念放在锁国性这种文化特征的延长线上来加以理解。“国体”的起源来自吉田寅次郎，他认为，此语指涉日本民族特有的推进力量。根据《古事记》记载，“国体”可被解释为：以众神之后绵延不绝、万世一系的天皇家系为中心，并以天皇家系为信仰核心的概念。明治宪法公布前，宪法主要设计师伊藤博文和其助手金子坚太郎曾发生争论，金子坚太郎主张将国体强调为日本特有的东西，这一主张得到了当局的认可，其他观点因此均无存在的余地。</p>
 <p>明治时代的建造者认为，日本人应让作为国家宗教的显教（天皇崇拜）和密教（限制君主）的信徒接受不同的训练。他们在为国家掌舵的同时将国家置于天皇崇拜这一基础上，并训练可能成为领导者的青年们习得教养与技术。在日俄战争后，这些建造者被称为“元老”，他们试图引导继承者们理解密教的同时指挥显教，也在遇到重大议题时发挥了下级与天皇间的屏风一样的功能。而青年军官们的登场让元老逐渐失去效用，1931至1945年间是这一重臣阶层无法发挥作用的时代。日本战败前夕，较年轻清醒的准重臣们秘密引出了年长的老将——作为战时最后的首相，铃木贯太郎曾是日俄战争时期的水雷战队指挥官，他对民众声明要极力维护国体，并秘密寻求彻底抗战以外的方法保护日本。接受《中美英三国促令日本投降之波茨坦公告》后，他宣称国体已获得维护。这一行动无疑是显教与密教结合的精彩实例。</p>
@@ -453,7 +543,7 @@
 <p> 2020.11.5&amp;2021.1.3</p>
 <br>
 
-<h2 id="五-大亚细亚-1"><a href="#五-大亚细亚-1" class="headerlink" title="五 大亚细亚"></a>五 大亚细亚</h2><br>
+<h2 id="五-大亚细亚"><a href="#五-大亚细亚" class="headerlink" title="五 大亚细亚"></a>五 大亚细亚</h2><br>
 
 <p>大亚细亚，即日本构想下亚洲人和平共存的理想大共同体。</p>
 <p>幕末维新前，即鸦片战争时，日本的先驱者已于危机感中萌生出这一观念，明治维新后，许多学者将全部精力投放到对欧洲制度的学习上，当这些人重新将目光转回中国和朝鲜时，自认为已经具有教育的资格。</p>
@@ -471,7 +561,7 @@
 <p> 2021.1.3</p>
 <br>
 
-<h2 id="六-非转向的形式-1"><a href="#六-非转向的形式-1" class="headerlink" title="六 非转向的形式"></a>六 非转向的形式</h2><br>
+<h2 id="六-非转向的形式"><a href="#六-非转向的形式" class="headerlink" title="六 非转向的形式"></a>六 非转向的形式</h2><br>
 
 <p>日本人并无对宗教的固定崇拜，即便被外国人问起信仰时会回答佛教，但对他们来说佛教与神道教间没有明确的界限。城市中的日本人同样庆祝圣诞节，“日本人每年只有一天时基督徒，不仅互赠圣诞礼物，也把这天当作喝酒的借口。通过每年只做一天的基督徒，日本人认识了基督教的传说和仪式，进而开始对基督徒的生活方式产生共鸣。”这些不同的宗教杂糅于日本的共同信仰之中，并被塑造出效忠政府的模样来。</p>
 <p>锁国以来，日本的基督教徒几乎都被迫转向，对这一时期福音书的传递的了解也许可以作为探究日本人宗教心性质的依据。1854年门户开放后，数千名基督教徒浮出水面，不过在明治初依然受到拷问与流放，直到1873年才解除对基督教的禁令。</p>
@@ -493,7 +583,7 @@
 <p>**车裂真包含于磔；磔真包含于凌迟。</p>
 <br>
 
-<h2 id="七-日本之中的朝鲜-1"><a href="#七-日本之中的朝鲜-1" class="headerlink" title="七 日本之中的朝鲜"></a>七 日本之中的朝鲜</h2><br>
+<h2 id="七-日本之中的朝鲜"><a href="#七-日本之中的朝鲜" class="headerlink" title="七 日本之中的朝鲜"></a>七 日本之中的朝鲜</h2><br>
 
 <p>1875年时，日本的左右两派就有将“文明”强加于朝鲜的想法。1884年，后藤象二郎和板桓退助计划发动军事政变推翻朝鲜传统主义者的统治，得知此计划的日本政府着手进行类似的行动，被中国派遣军干涉瓦解。1885年，大井宪太郎计划“大阪事件”，决定以暴力推翻朝鲜政府，在行动前日本警方镇压。</p>
 <p>“文明阶梯”这一思想时常在日本国内对政治有兴趣的人中作为一种实体观念发挥作用，无论是右翼还是左翼，都相信要强制朝鲜进一步登上文明阶梯，诉诸武力未尝不可。</p>
@@ -515,7 +605,7 @@
 <p>2021.1.4</p>
 <br>
 
-<h2 id="笔者语-1"><a href="#笔者语-1" class="headerlink" title="笔者语"></a>笔者语</h2><br>
+<h2 id="笔者语"><a href="#笔者语" class="headerlink" title="笔者语"></a>笔者语</h2><br>
 
 <p>在今天我写完第七章回头整理的过程中，我发现一个问题。</p>
 <p>去年十月末，第一次从这本书开始接触日本近代史时，因为其中庞大的信息量我决定写一份读书笔记。我当时写到转向，那会儿我没打算把鹤见俊辅提及的人物和书籍给完全不落地记录下来（现在我这么打算了，于是我每章记的篇幅越来越长），面对日本文化历史也完全是个Stranger，几乎每行字里都有我无法理解的东西。我当时的想法很简单，记录一下梳理梳理逻辑，要不然我如果保持旧习走马观花看过就走了，必然记不住什么。</p>
@@ -821,6 +911,100 @@
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('8'),
+            headingSelector: 'h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
     
 
 </main>
@@ -843,7 +1027,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">33.9k</span>&nbsp;字
+                class="white-color">33.8k</span>&nbsp;字
             
             
             
@@ -884,6 +1068,10 @@
 
 
 
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
 
 </div>
     </div>
